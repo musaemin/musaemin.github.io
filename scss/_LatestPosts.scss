@@ -1,0 +1,75 @@
+#LatestPosts{
+	@media screen and (max-width: 960px) and (min-width: 720px){ 
+		.non1{
+			display: none;
+		}
+}
+	@media screen and (max-width: 960px) and (min-width: 400px){ 
+			.box3{
+				width: 50%;
+				margin:0 auto;
+				height: auto;
+			}
+}
+
+	.box3{
+		box-shadow: 0 1px 4px rgba(0,0,0,.15);
+		transition: .5s;
+		&:hover{box-shadow: 0 10px 25px rgba(0,0,0,0.15);}
+		h3,p{padding: 10px 0px 0px 20px;
+		font-family: $font1;}
+		h3{
+			
+			font-size: 24px;
+			font-weight: 600;
+		}
+		p{color: #626262;
+			
+			font-size: 14px;
+			font-weight: 400;
+
+		}
+		ul{padding-left: 15px;
+			li{
+				
+				i{ color: $maincolor1;
+					padding: 0px 10px 0px 10px ;
+				}
+			}
+		}
+		a{
+			position: relative;
+			padding: 10px;
+			i{
+				padding-right: 5px;
+			}
+			&:hover{
+				color: $maincolor1;
+			}
+
+		}
+		.xet {
+			font-size: 12px;
+			font-weight: 300;
+			font-family: $font1;
+			&::after {
+			content: '';
+			width: 40%;
+			height: 1px;
+			background:$maincolor1;
+			position: absolute;
+			left: 0%;
+			bottom:30%;
+			opacity: (0);
+			transition: .5s;
+			}
+			&:hover {
+				&::after {
+			left: 10%;
+			opacity: (1);
+				}
+			}
+		}
+
+	}
+}

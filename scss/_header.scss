@@ -1,0 +1,126 @@
+#header{h1 {color: black;
+		padding-left: 35px;
+		font-weight: 600;
+		font-size: 30px;}
+
+@media screen and (max-width: 1024px){  //headerde sekil ve menunun responsivliyi
+	.container-fluid{
+		background:url(img/bg1.jpg) scroll 65% 50% / cover; 
+	}
+	#menu{
+		display: none;
+	}
+	#icon{
+		font-size: 30px;
+		display: block;
+	}
+	.cub{
+		.respon{
+			display: none;
+
+		}
+	}
+
+    }
+@media screen and (min-width: 1024px){  //headerde sekil ve menunun responsivliyi
+	.container-fluid{
+		background:url(img/bg1.jpg) scroll  center center / cover; 
+	}
+	#icon{
+		display: none!important;
+	}
+           
+    }
+
+
+	.container-fluid{
+		height: 655px;
+	}
+	li{
+		font-size: 15px;
+
+		padding: 17px;
+		padding-top: 0px;
+		padding-right: 5px;
+		
+
+	}
+	.dot-h{
+		font-weight: 600;
+		font-size: 30px;
+		color: $maincolor1;
+	}
+
+	.div1{//Welcome
+		font-size: 14px;
+    	letter-spacing: 2px;
+    	font-weight: 600;
+	}
+	.div2{//We are Musa.
+		    font-size: 40px;
+		    font-weight: 600;
+		    letter-spacing: 1px;
+		    line-height: 1;
+		    margin: 0 0 10px;
+		    text-transform: unset;
+
+	}
+	.div3{font-size: 14px; //Professional UI/UX Designer.
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+	}
+	
+	.tp50{ // cub un pisitionu
+		top:50%;
+		left: 30%;
+	}
+	header{height: 60%;
+		position: relative;
+		.cub{
+			position: absolute;
+			top: 140px;
+			left: 6%;
+		}
+
+	}
+
+	
+
+
+
+
+.anime-border{
+border:2px solid  $maincolor1;
+border-radius: 30px;
+height: 60px;
+width: 30px;
+position: absolute;
+bottom:-32%;
+left: 48%;
+
+
+
+}
+@keyframes minibol {
+  0%   { top:10%;}
+  50%  {  top:65%;}
+  100%   { top:10%;}}
+.anime{
+	animation-iteration-count: infinite;
+	animation-name: minibol;
+	animation-duration: 4s;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	background:$maincolor1 ;
+ 	border-radius:100px;
+ 	transform: translate(-50% , 50%);
+}
+}

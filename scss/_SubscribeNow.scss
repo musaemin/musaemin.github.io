@@ -1,0 +1,45 @@
+#SubscribeNow{
+	position: relative;
+.bg-f{
+background:url(img/bg2.jpg);
+background-color: rgba(0,0,0,0.5);
+color: white;
+background-blend-mode: color;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+height: 700px;
+}
+.container-fluid {
+	.container {
+		input{color: white;
+			background: #87878787;
+			width: 60%;
+			height: 43px;
+			
+		}
+		input::placeholder{color: white}
+		box-sizing: border-box;
+		width: 50%;
+	
+		
+		}
+	}
+
+.map{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	bottom:0%;
+}
+.box4mini{width: 40px;
+		border:2px solid white;
+		padding: 10px;
+		transition: 0.5s;
+		&:hover{
+			background:$maincolor1;
+			color: white;
+		}
+	}
+}

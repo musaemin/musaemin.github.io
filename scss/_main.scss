@@ -1,0 +1,136 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Dosis', sans-serif;
+
+
+$maincolor1: #00C9B1;//yasil
+$maincolor2:#2e2e2e; //bozqara
+$maincolor3:#B2B2B2; //boz
+$font1: 'Open Sans', sans-serif;
+$font2: 'Dosis', sans-serif;
+
+li{
+	list-style-type: none;
+}
+
+.maincolor1{
+	color: $maincolor1
+}
+.maincolor2{
+	color: $maincolor2
+}
+.maincolor3{
+	color: $maincolor3
+}
+.font1{
+	font-family: $font1;
+	
+}
+
+.font2{
+	font-family: $font2;
+
+}
+
+
+a:hover{
+	transition: 0.3s;
+
+	color: $maincolor1;
+	text-decoration: none;
+}
+
+a{
+transition: 0.3s;
+ color: $maincolor2;
+	text-decoration: none;
+}
+
+
+
+.button {
+  
+  background:$maincolor1;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: 43px;
+  line-height: 43px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ;
+}
+
+
+.button:focus{
+	outline-style: none;
+}
+
+
+.btn2:hover {
+  color: $maincolor1;
+}
+.btn2::before {
+	 content: "";
+  background: white;
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.btn2:hover::before {
+  height: 100%;
+}
+
+.btn1:hover {
+  color: $maincolor1;
+}
+.btn1::before {
+  background: white;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.btn1:hover::before {
+  width: 100%;
+}
+
+
+.cub-xet{
+		p::before{ //uzun xet
+			content: "";
+			width: 100px;
+			height:2px;
+			position: absolute;
+			bottom:0%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background-color:$maincolor1;
+		}
+
+
+
+	p::after{//romb
+		content: "";
+		width: 15px;
+		height:15px;
+		position: absolute;
+		bottom:-13px;
+		left: 50%;
+		transform: translate(-50%,-50%) rotate(45deg);
+		background-color:$maincolor1;
+
+
+	}}

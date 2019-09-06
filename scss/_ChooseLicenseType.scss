@@ -1,0 +1,62 @@
+#ChooseLicenseType{background-color: #f6f6f6;
+
+.box4{background:white;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+		margin-top: 20px;
+		padding: 40px  ;
+		transition: .8s;
+		&:hover{
+			color: white;
+			background:$maincolor1;
+			
+
+		}
+	}
+		.p{padding-top: 10px;
+			padding-bottom: 25px;
+			font-size: 48px;
+			font-weight: 700;
+			position: relative;
+			&:after{position: absolute;
+				bottom:13%;
+				left: 40%;
+				content: "per month";
+				font-family: $font1;
+				font-weight: 400;
+				font-size: 12px;
+			}
+		}
+		.box4-2{@extend .box4;
+			color: white;
+			background:$maincolor1;
+				button{background-color: white;
+			color: $maincolor1;}
+			}
+		
+		
+		ul{li{margin-top: 10px;
+			font-size: 14px;
+			font-family: $font1;
+			font-weight: 600;}
+			padding: 0px;
+			text-align: center;
+		}
+		h6{padding-top: 10px;}
+	
+@media screen and (min-width: 540px)and (max-width: 1023px){
+		.respon{
+		display: none;
+			
+
+		}
+
+	}
+	@media screen and (max-width: 520px)and (min-width: 1023px){
+		.respon{
+			display: block;
+			
+			
+
+		}
+
+}}

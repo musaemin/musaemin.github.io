@@ -1,0 +1,129 @@
+#OurExperts{
+	h6{color:$maincolor1;
+		font-style: italic;
+		position:relative;
+		&:after{
+			content:"";
+			width: 100%;
+			height:2px;
+			background-color:$maincolor1;
+			position:absolute;
+			bottom:-80%;
+			left:1%;
+			}}
+	img{
+		width: 100%;
+		}
+	.img-hov{
+		position:relative;
+		.black-hov{
+					transition: .5s;
+					position:absolute;
+					top: 0%;
+					left: 0%;
+					background:black;
+					width: 0%;
+					height: 0%;
+					opacity: (0.5);
+					}
+	&:hover .black-hov{
+						width: 100%;
+						height: 100%;
+
+						}
+			
+		.white-hov{
+					transition: all .3s ease 0.3s;
+					position:absolute;
+					bottom: -20%;
+					left: -1%;
+					background:white;
+					width: 106%;
+					height: 22%;
+					opacity: (1);
+					transform:  rotateZ(-12deg);
+					transform-origin: top left;
+					}
+	&:hover .white-hov{
+						transform:  rotateZ(0deg);
+
+						}
+			
+        .icon-hov{
+        	.fab{
+        		width: 40px;
+        		height: 40px;
+        		font-size: 15px;
+        		border:1px solid white;
+        		padding: 10px 10px;
+        		margin-left: 5px;
+        		margin-right:5px;
+        		color: white;
+        		
+
+
+        	}
+        	.fa-facebook-f{box-sizing: border-box;
+        		margin-bottom: 10px;
+        		margin-top: 0px;
+        		opacity: (0);
+        		transition: all .1s ease 0.1s;}
+        	.fa-twitter{box-sizing: border-box;
+        		margin-bottom: 30px;
+        		margin-top: -20px;
+        		opacity: (0);
+        		transition: all .1s ease 0.1s;}
+        	.fa-instagram{box-sizing: border-box;
+        		margin-bottom: 30px;
+        		margin-top: -20px;
+        		opacity: (0);
+        		transition: all .1s ease 0.1s;}
+        	.fa-pinterest-p{box-sizing: border-box;
+        		margin-bottom: 30px;
+        		margin-top: -20px;
+        		opacity: (0);
+        		transition: all .1s ease 0.1s;}
+
+					
+					position:absolute;
+					top: 50%;
+					left: 50%;
+					width: 95%;
+					height: 20%;
+					opacity: (0);
+					transform:translate(-50%,-50%);
+					padding:4px;
+
+					}
+	&:hover .icon-hov{
+				
+				.fa-facebook-f{box-sizing: border-box;
+					transition: all .6s ease 0.3s;
+					opacity: (1);	
+					margin-bottom: 0px;
+        			margin-top: 10px;
+        			}
+				.fa-twitter{box-sizing: border-box;
+					transition: all .6s ease 0.5s;
+					opacity: (1);	
+					margin-bottom: 0px;
+        			margin-top: 10px;
+        			}
+				.fa-instagram{box-sizing: border-box;
+					transition: all .6s ease 0.7s;
+					opacity: (1);	
+					margin-bottom: 0px;
+        			margin-top: 10px;
+        			}
+				.fa-pinterest-p{box-sizing: border-box;
+					transition: all .6s ease 0.9s;
+					opacity: (1);	
+					margin-bottom: 0px;
+        			margin-top: 10px;
+        			}
+		   			
+					opacity: (1);	
+
+						}
+			}
+}

@@ -1,0 +1,36 @@
+#WhatWeDo{
+	.box3{margin: 10px 0px;
+		padding: 20px;
+		background:white;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+		.icon{
+			padding-top: 10px;
+			transition: 0.8s;
+		}
+		i{font-size: 36px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			color: $maincolor1;
+		}
+		p{font-family: $font1;
+			padding-bottom: 20px;
+			font-size: 13px;
+		}
+		h3{color: $maincolor2;
+			font-family: $font2;
+			font-size: 20px;
+		}
+		transition: 0.5s;
+		&:hover{
+			margin-top: 0px;
+			margin-bottom: 20px;
+			.icon{
+				padding-top: 0px;
+				padding-bottom: 10px;
+				transition: 0.8s;
+			}
+		}
+	}
+
+
+}
